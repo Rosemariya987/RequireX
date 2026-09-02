@@ -1,0 +1,24 @@
+# Software Requirement Specification (SRS)
+## Project: SmartCare Hospital & Clinical Patient Management System
+## Standard: ISO/IEC/IEEE 29148:2018 Guidelines
+
+### 1. Scope & System Overview
+The SmartCare System is an integrated hospital clinical information management platform designed to automate patient intake, electronic health records (EHR), physician prescription management, billing, and real-time medical vital alerts.
+
+### 2. Functional Requirements
+* FR-001: The system shall allow authorized hospital staff and triage nurses to register new patients with demographic details, government health IDs, and insurance policies.
+* FR-002: The system shall provide a multi-factor authentication mechanism for doctors, nurses, and administrative staff using role-based access control.
+* FR-003: The system shall allow licensed physicians to create, review, and digitally sign electronic prescriptions and laboratory test orders.
+* FR-004: The system shall record continuous ICU vital telemetry (heart rate, SpO2, blood pressure) and trigger visual and SMS alerts to on-duty staff when vitals exceed clinical safety thresholds.
+* FR-005: The system shall integrate with external insurance clearinghouses to verify patient coverage and calculate co-payment amounts.
+* FR-006: The system shall generate comprehensive daily discharge summaries and invoice billing statements in PDF format.
+* FR-007: The system shall provide an intuitive dashboard for ward bed occupancy tracking and automatic room assignment.
+* FR-008: The system shall process patient search queries fast and return medical history with minimal delay.
+* FR-009: The system shall be robust and handle high hospital data traffic as appropriate.
+
+### 3. Non-Functional Requirements
+* NFR-001: Security - All patient electronic protected health information (ePHI) shall be encrypted at rest using AES-256 and in transit using TLS 1.3 in compliance with HIPAA guidelines.
+* NFR-002: Performance - The system shall process API transactions with a 95th percentile response latency of under 400 milliseconds under a concurrent load of 500 active clinicians.
+* NFR-003: Reliability - The hospital management system shall maintain a minimum service availability of 99.95% uptime with automated database failover within 30 seconds.
+* NFR-004: Usability - The user interface shall be user-friendly, clean, and easy to use for medical staff on desktop tablets and workstation monitors.
+* NFR-005: Maintainability - The system shall maintain comprehensive structured audit logging for all patient record access events with 7-year immutable archival.

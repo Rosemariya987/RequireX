@@ -1,0 +1,21 @@
+# Software Requirement Specification (SRS)
+## Project: GlobalMart Distributed E-Commerce Marketplace
+## Standards Compliance: ISO/IEC/IEEE 29148:2018
+
+### 1. Introduction & Purpose
+GlobalMart is a high-volume omnichannel retail marketplace connecting buyers, vendor merchants, and logistics fulfillment partners.
+
+### 2. Functional Requirements
+* FR-001: The system shall enable registered consumers to browse product catalogs, filter by category/price, and perform full-text fuzzy searches.
+* FR-002: The system shall manage persistent digital shopping carts with automatic price synchronization and inventory reservation locks.
+* FR-003: The system shall process credit card, digital wallet, and UPI transactions via PCI-DSS certified payment gateways.
+* FR-004: The system shall calculate localized sales taxes, international customs duties, and courier shipping rates dynamically during checkout.
+* FR-005: The system shall notify customers via automated email and SMS upon order placement, shipment dispatch, and delivery.
+* FR-006: The system shall allow merchant sellers to upload inventory spreadsheets, update SKU pricing, and manage return requests.
+* FR-007: The application should be seamless and work efficiently across web and mobile browsers.
+
+### 3. Non-Functional Requirements
+* NFR-001: Scalability - The platform architecture shall auto-scale horizontally to support 25,000 requests per second during flash sale events without service disruption.
+* NFR-002: Security - User passwords shall be hashed using Argon2id and API endpoints shall enforce OAuth 2.0 JWT bearer token authentication.
+* NFR-003: Latency - The product catalog search endpoint shall return results in less than 150 milliseconds for 99% of requests.
+* NFR-004: Availability - The checkout and order placement subsystems shall guarantee 99.99% high availability with zero single points of failure.
